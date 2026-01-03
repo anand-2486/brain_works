@@ -1,0 +1,13 @@
+# 1. Virtual Environment (Crucial)
+venv/
+
+# 2. Python Cache (Junk)
+__pycache__/
+*.pyc
+
+# 3. The Downloaded Model (Do not upload 150MB to GitHub)
+model.h5
+*.h5
+
+# 4. Mac System Junk (Invisible but annoying)
+.DS_Store
