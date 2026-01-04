@@ -156,10 +156,8 @@ function App() {
             <Services />
           </div>
 
-          <TestimonialsAbout />
-          
           <div id="about">
-            <TestimonialsAbout/>
+            <TestimonialsAbout />
           </div>
           
           <CardiologyClinic />
