@@ -271,7 +271,7 @@ function BrainWorksApp({ user }) {
 
     try {
       // 🟢 REAL SERVER CONNECTION
-      const response = await fetch("http://localhost:8000/predict", { 
+      const response = await fetch("https://brain-works-api-649440239158.us-central1.run.app/predict", { 
         method: "POST", 
         body: backendData 
       });
@@ -436,7 +436,7 @@ function BrainWorksApp({ user }) {
 
                   {/* 🟢 DIRECT DOWNLOAD FROM BACKEND */}
                   <a 
-                    href="http://localhost:8000/download_report" 
+                    href="https://brain-works-api-649440239158.us-central1.run.app/download_report"
                     download="NeuroScan_Report.pdf"
                     style={styles.resultBtn}
                   >
