@@ -99,3 +99,10 @@ def download_report():
         )
     else:
         raise HTTPException(status_code=404, detail="No report found. Please run a scan first.")
+# --- RUN THE APP ---
+if __name__ == "__main__":
+    import uvicorn
+    import os
+    # Get port from environment variable, default to 8080
+    port = int(os.environ.get("PORT", 8080))
+    uvicorn.run(app, host="0.0.0.0", port=port)
